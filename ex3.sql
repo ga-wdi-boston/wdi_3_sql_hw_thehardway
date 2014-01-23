@@ -12,5 +12,8 @@ INSERT INTO person (first_name, last_name, age)
 INSERT INTO pet (name, breed, age, dead)
 	VALUES ("Chester", "Dog", 13, 1);
 
+INSERT INTO pet (name, breed, age, dead)
+	VALUES ("Paul", "Cat", 13, 1);
+
 INSERT INTO person_pet (person_id, pet_id)
 	VALUES (1, 1);
