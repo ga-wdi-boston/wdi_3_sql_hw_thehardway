@@ -2,7 +2,8 @@ CREATE TABLE person (
     id INTEGER PRIMARY KEY,
     first_name TEXT,
     last_name TEXT,
-    age INTEGER
+    age INTEGER,
+    pet_id INTEGER
 );
 
 CREATE TABLE pet (
