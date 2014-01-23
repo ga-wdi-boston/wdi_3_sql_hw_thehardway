@@ -3,7 +3,7 @@ CREATE TABLE person (
     first_name TEXT,
     last_name TEXT,
     age INTEGER,
-    pet_id INTEGER
+    person_pet.pet_id INTEGER
 );
 
 CREATE TABLE pet (
