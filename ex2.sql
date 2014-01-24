@@ -1,3 +1,7 @@
+DROP TABLE person
+DROP TABLE pet
+DROP TABLE person_pet
+
 CREATE TABLE person (
     id INTEGER PRIMARY KEY,
     first_name TEXT,
@@ -20,21 +24,21 @@ CREATE TABLE person_pet (
 
 -- Extra Credit 1
 
-CREATE TABLE person (
+/* CREATE TABLE person (
     id INTEGER PRIMARY KEY,
     first_name TEXT,
     last_name TEXT,
     age INTEGER,
-    pet_id Integer
+    pet_id INTEGER
 );
 
 -- Extra Credit 2
--- You can put more than one row in person_pet. For someone with multiple pets,
--- you could create an id column to differentiate the different records.
+You can put more than one row in person_pet. For someone with multiple pets,
+you could create an id column to differentiate the different records.
 
 -- Extra Credit 3
 
-CREATE TABLE car (
+ CREATE TABLE car (
     id INTEGER PRIMARY KEY,
     year INTEGER,
     make TEXT,
@@ -46,3 +50,4 @@ CREATE TABLE person_car (
     car_id INTEGER
 );
 
+*/
