@@ -16,7 +16,8 @@ CREATE TABLE pet (
     name TEXT,
     breed TEXT,
     age INTEGER,
-    dead INTEGER
+    dead INTEGER,
+    dob DATETIME
 );
 
 CREATE TABLE person_pet (
@@ -42,8 +43,6 @@ DELETE FROM person_pet;
 DELETE FROM car;
 DELETE FROM person_car;
 
-ALTER TABLE person ADD COLUMN height INTEGER;
-ALTER TABLE person ADD COLUMN weight INTEGER;
 
 INSERT INTO person (id, first_name, last_name, age)
     VALUES (0, "Zed", "Shaw", 37);
@@ -51,16 +50,16 @@ INSERT INTO person (id, first_name, last_name, age)
 INSERT INTO pet (id, name, breed, age, dead)
     VALUES (0, "Fluffy", "Unicorn", 1000, 0);
 
-INSERT INTO pet VALUES (1, "Gigantor", "Robot", 1, 1);
+INSERT INTO pet (id, name, breed, age, dead) VALUES (1, "Gigantor", "Robot", 1, 1);
 
 INSERT INTO person (first_name, last_name, age)
 	VALUES ("Mike", "Stone", 27);
 
 INSERT INTO pet (id, name, breed, age, dead)
-	VALUES (1, "Chester", "Dog", 13, 1);
+	VALUES (2, "Chester", "Dog", 13, 1);
 
 INSERT INTO pet (id, name, breed, age, dead)
-	VALUES (2, "Paul", "Cat", 13, 1);
+	VALUES (3, "Paul", "Cat", 13, 1);
 
 INSERT INTO person_pet (person_id, pet_id)
 	VALUES (1, 1);
@@ -107,7 +106,7 @@ DELETE FROM pet WHERE dead = 1;
 SELECT * FROM pet;
 
 /* let's resurrect the robot */
-INSERT INTO pet VALUES (1, "Gigantor", "Robot", 1, 0);
+INSERT INTO pet (id, name, breed, age, dead) VALUES (1, "Gigantor", "Robot", 1, 0);
 
 /* the robot LIVES! */
 SELECT * FROM pet;
