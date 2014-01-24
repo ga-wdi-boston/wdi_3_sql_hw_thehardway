@@ -23,19 +23,19 @@ UPDATE person SET salary = 100000
 UPDATE person SET salary = 50000
   WHERE first_name = "Zed";
 
-UPDATE person SET dob = 04/27/1989 00:00:00
+UPDATE person SET dob = '04/27/1989 00:00:00'
   WHERE first_name = "Laure";
 
-UPDATE person SET dob = 08/10/1976 00:00:00
+UPDATE person SET dob = '08/10/1976 00:00:00'
   WHERE first_name = "Zed";
 
-UPDATE pet SET dob = 09/03/2002 00:00:00
+UPDATE pet SET dob = '09/03/2002 00:00:00'
   WHERE name = "Tyson";
 
-UPDATE person_pet SET purchased_on = 12/20/2003 00:00:00
+UPDATE person_pet SET purchased_on = '12/20/2003 00:00:00'
   WHERE person_id = 1;
 
-UPDATE person_pet SET purchased_on = 12/25/2005 00:00:00
+UPDATE person_pet SET purchased_on = '12/25/2005 00:00:00'
   WHERE person_id = 0;
 
 UPDATE pet SET parent = 1 WHERE id IN (
@@ -85,7 +85,7 @@ INSERT INTO pet (id, name, breed, age, dead, dob)
     VALUES (9, "Felix", "Hamster", 3, 0, '06/12/2011 00:00:00');
 
 -- Find owners and pets with purchase dates after 2004
-SELECT person.name, pet.name FROM person, pet, person_pet
+SELECT person.first_name, pet.name FROM person, pet, person_pet
     WHERE
     person.id = person_pet.person_id AND
     pet.id = person_pet.pet_id AND
