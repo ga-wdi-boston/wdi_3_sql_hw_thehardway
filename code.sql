@@ -70,11 +70,13 @@ ALTER TABLE person RENAME TO peoples;
 
 -- There are too many peoples; hate arises
 ALTER TABLE peoples ADD COLUMN hatred INTEGER;
-ALTER TABLE peoples ADD COLUMN height INTEGER;
-ALTER TABLE peoples ADD COLUMN weight INTEGER;
 
 -- You know what I actually prefered calling it person
 ALTER TABLE peoples RENAME TO person;
+
+ALTER TABLE person ADD COLUMN height INTEGER;
+ALTER TABLE person ADD COLUMN weight INTEGER;
+
 
 .schema person
 
