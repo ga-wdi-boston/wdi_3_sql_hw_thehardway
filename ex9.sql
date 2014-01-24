@@ -6,3 +6,9 @@ UPDATE pet SET name = "Fancy Pants"
 
 SELECT * FROM person;
 SELECT * FROM pet;
+
+UPDATE person SET first_name = "Zed"
+	WHERE id = 0
+
+UPDATE pet SET name = "Rhonda"
+	WHERE id = 0;
