@@ -51,5 +51,5 @@ INSERT INTO person_pet VALUES (1, 2);
 INSERT INTO person_pet VALUES (1, 3);
 
 DELETE FROM pet WHERE dead = 1;
-INSERT INTO pet VALUES (1, 'Gigantor', 'Robot', 1, 0);
+INSERT INTO pet VALUES (1, 'Gigantor', 'Robot', 1, 1);
 INSERT INTO pet VALUES (2, "Gus", "Guinea Pig", 7, 1);
