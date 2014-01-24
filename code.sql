@@ -1,6 +1,6 @@
-DROP TABLE person;
-DROP TABLE pet;
-DROP TABLE person_pet;
+DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS pet;
+DROP TABLE IF EXISTS person_pet;
 
 CREATE TABLE person (
     id INTEGER PRIMARY KEY,
@@ -78,9 +78,25 @@ SELECT name, age FROM pet WHERE dead = 1;
 
 DELETE FROM pet WHERE dead = 1;
 
-
 SELECT * FROM pet;
 
 INSERT INTO pet VALUES (1, "Gigantor", "Robot", 1, 0);
 
 SELECT * FROM pet;
+
+ALTER TABLE person ADD COLUMN height INTEGER;
+
+ALTER TABLE person ADD COLUMN weight INTEGER;
+
+DROP TABLE person;
+
+CREATE TABLE "person" (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    age INTEGER,
+    hatred INTEGER,
+    height INTEGER,
+    weight INTEGER);
+
+
