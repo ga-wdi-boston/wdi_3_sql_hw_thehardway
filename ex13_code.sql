@@ -23,15 +23,13 @@ CREATE TABLE pet (
     breed TEXT,
     age INTEGER,
     dead INTEGER
+    dob DATETIME
 );
 
 CREATE TABLE person_pet (
     person_id INTEGER,
     pet_id INTEGER
 );
-
-ALTER TABLE person ADD COLUMN height INTEGER;
-ALTER TABLE person ADD COLUMN weight INTEGER;
 
 
 INSERT INTO person (id, first_name, last_name, age)
