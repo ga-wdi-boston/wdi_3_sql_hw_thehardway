@@ -42,6 +42,9 @@ DELETE FROM person_pet;
 DELETE FROM car;
 DELETE FROM person_car;
 
+ALTER TABLE person ADD COLUMN height INTEGER;
+ALTER TABLE person ADD COLUMN weight INTEGER;
+
 INSERT INTO person (id, first_name, last_name, age)
     VALUES (0, "Zed", "Shaw", 37);
 
