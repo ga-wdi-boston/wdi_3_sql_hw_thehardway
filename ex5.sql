@@ -14,3 +14,5 @@ SELECT * FROM person WHERE age < 99;
 
 SELECT * FROM person WHERE age > 5 AND age < 99;
 
+SELECT * FROM pet WHERE breed = 'unicorn' OR 'rabbit' AND age < 99;
+

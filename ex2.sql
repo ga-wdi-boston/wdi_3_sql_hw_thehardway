@@ -32,6 +32,8 @@ CREATE TABLE person_car (
     car_id INTEGER,
 );
 
+/*
+
 #to get rid of person-pet,
 #you could just delete person_pet and add pet_id INTEGER to the person table and person_id to
 #to the pet table. Having the relational table means you would only have to enter that
@@ -39,4 +41,4 @@ CREATE TABLE person_car (
 
 #crazy cat lady could be listed on 50 times in the person column with the unique ids for each of her cats
 #on its own row
-
+*/
