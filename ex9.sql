@@ -7,3 +7,14 @@ UPDATE pet SET name = 'Fancy Pants'
 SELECT * FROM person;
 
 SELECT * FROM pet;
+
+
+UPDATE person SET first_name = 'Zed'
+  WHERE first_name = 'Hilarious Guy';
+
+UPDATE pet SET name = 'Deceased'
+  WHERE dead = 1;
+
+SELECT * FROM person;
+
+SELECT * FROM pet;
