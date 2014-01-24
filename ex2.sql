@@ -29,3 +29,6 @@ CREATE TABLE person_car (
     person_id integer,
     car_id integer
 );
+
+
+-- use this to create ex3.db as well
