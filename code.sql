@@ -51,13 +51,13 @@ INSERT INTO pet (id, name, breed, age, dead)
 INSERT INTO pet VALUES (1, "Gigantor", "Robot", 1, 1);
 
 INSERT INTO person (first_name, last_name, age)
-	VALUES ("Mike", "Stone", 37);
+	VALUES ("Mike", "Stone", 27);
 
-INSERT INTO pet (name, breed, age, dead)
-	VALUES ("Chester", "Dog", 13, 1);
+INSERT INTO pet (id, name, breed, age, dead)
+	VALUES (1, "Chester", "Dog", 13, 1);
 
-INSERT INTO pet (name, breed, age, dead)
-	VALUES ("Paul", "Cat", 13, 1);
+INSERT INTO pet (id, name, breed, age, dead)
+	VALUES (2, "Paul", "Cat", 13, 1);
 
 INSERT INTO person_pet (person_id, pet_id)
 	VALUES (1, 1);
